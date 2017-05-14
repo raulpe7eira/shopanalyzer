@@ -1,0 +1,33 @@
+pt-BR:
+  activerecord:
+    models:
+      product:
+        one: Product
+        other: Products
+      shopper:
+        one: Shopper
+        other: Shoppers
+      supplier:
+        one: Supplier
+        other: Suppliers
+      sale:
+        one: Sale
+        other: Sales
+    attributes:
+      product:
+        name: Name
+        user: User
+      sale:
+        price: Price
+        amount: Amount
+        address: Address
+        shopper: Shopper
+        product: Product
+        supplier: Supplier
+        user: User
+      shopper:
+        name: Name
+        user: User
+      supplier:
+        name: Name
+        user: User

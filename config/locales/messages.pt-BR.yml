@@ -1,0 +1,11 @@
+pt-BR:
+  messages:
+    confirm: Tem certeza que deseja apagar?
+    created: Foi criado com sucesso
+    updated: Foi atualizado com sucesso
+    destroyed: Foi apagado com sucesso
+    uploaded: Foi enviado com sucesso
+    error:
+      dependents: Não pode apagar enquanto houver registros associados
+      notfound: Registro não encontrado
+      typefile: Tipo de arquivo inválido

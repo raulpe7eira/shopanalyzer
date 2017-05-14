@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+  <h2 class="sb-title"><%= "#{t('labels.import')} #{Sale.model_name.human}" %></h2>
+  <div class="panel-body">
+    <%= form_tag upload_sales_path, multipart: true do %>
+      <div class="form-group form-group-sm">
+        <%= file_field_tag :file, accept: 'text/plain', class: 'form-control' %>
+      </div>
+ 
+      <div class="panel-footer">
+        <%= submit_tag t('buttons.upload'), class: 'btn btn-sm btn-primary' %>
+        <%= link_to t('buttons.cancel'), sales_path, class: 'btn btn-sm btn-default' %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopanalyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <% if user_signed_in? %>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <% end %>
+          <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Shopanalyzer</a>
+        </div>
+        <% if user_signed_in? %>
+        <div class="collapse navbar-collapse" id="main-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="<%= 'active' if current_controller?('sales') %>" role="presentation">
+              <%= link_to Sale.model_name.human(count: 2), sales_path %>
+            </li>
+            <li class="<%= 'active' if current_controller?('shoppers') %>" role="presentation">
+              <%= link_to Shopper.model_name.human(count: 2), shoppers_path %>
+            </li>
+            <li class="<%= 'active' if current_controller?('products') %>" role="presentation">
+              <%= link_to Product.model_name.human(count: 2), products_path %>
+            </li>
+            <li class="<%= 'active' if current_controller?('suppliers') %>" role="presentation">
+              <%= link_to Supplier.model_name.human(count: 2), suppliers_path %>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <u><%= current_user.email %></u> <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <%= link_to edit_user_registration_path, :class => 'navbar-link' do %>
+                    <span class="glyphicon glyphicon-edit"></span> <%= t('labels.auth.edit_profile') %>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to destroy_user_session_path, method: :delete, :class => 'navbar-link' do %>
+                    <span class="glyphicon glyphicon-log-out"></span> <%= t('labels.auth.sign_out') %>
+                  <% end %>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <% end %>
+      </div>
+    </nav>
+    <div class="container-fluid main <%= 'auth' if !current_user %>">
+      <% if notice %>
+      <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= t(notice, default: notice) %>
+      </div>
+      <% end %>
+
+      <% if alert %>
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= t(alert, default: alert) %>
+      </div>
+      <% end %>
+
+      <%= yield %>
+
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </div>
+  </body>
+</html>
+
+

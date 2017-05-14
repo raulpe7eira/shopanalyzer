@@ -1,0 +1,12 @@
+pt-BR:
+  labels:
+    auth:
+      logged_in_as_html: Acessado como <strong>%{email}</strong>.
+      edit_profile: Editar perfil
+      sign_out: Sair
+    new: Novo
+    edit: Editar
+    import: Importar
+    error:
+      one: 'Erro: Proibido ser salvo'
+      other: 'Erros: Proibido ser salvo'

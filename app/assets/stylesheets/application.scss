@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap
+ */
+
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  background:#fbfbfb image-url('background.png') no-repeat right bottom fixed;
+}
+
+a.navbar-brand span {
+  top:2px;
+}
+
+div.main {
+  padding-top:70px;
+}
+
+div.auth {
+  width:350px;
+}
+
+div.panel {
+  opacity:.9;
+}
+
+th.sorters, th.actions, td.actions {
+  padding:5px 15px !important;
+}
+
+th.sorters {
+  max-width:68px;
+  min-width:68px;
+  width:68px;
+}
+
+th.actions, td.actions {
+  text-align:right;
+}
+
+div.panel-footer {
+  background:none;
+  border-top:1px solid #ddd;
+  line-height:0;
+  padding:10px 0 0;
+}
+
+div.list div.panel-footer {
+  background-color:#f5f5f5;
+  padding:10px 15px;
+}
+
+p.pagination-info {
+  display:inline-block;
+  padding-left:0;
+  margin:15px 0;
+}
+
+ul.pagination {
+  margin:0;
+}
+
+div.alert h2 {
+  margin-top:0;
+}
+
+h2.sb-title {
+  color:#959595;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin:15px 15px 0;
+  text-transform:uppercase;
+}

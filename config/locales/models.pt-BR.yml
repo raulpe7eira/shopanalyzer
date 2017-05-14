@@ -1,0 +1,33 @@
+pt-BR:
+  activerecord:
+    models:
+      product:
+        one: Produto
+        other: Produtos
+      shopper:
+        one: Comprador
+        other: Compradores
+      supplier:
+        one: Fornecedor
+        other: Fornecedores
+      sale:
+        one: Venda
+        other: Vendas
+    attributes:
+      product:
+        name: Nome
+        user: Usuário
+      sale:
+        price: Preço
+        amount: Quantidade
+        address: Endereço
+        shopper: Comprador
+        product: Produto
+        supplier: Fornecedor
+        user: Usuário
+      shopper:
+        name: Nome
+        user: Usuário
+      supplier:
+        name: Nome
+        user: Usuário

@@ -1,0 +1,12 @@
+en:
+  labels:
+    auth:
+      logged_in_as_html: Logged in as <strong>%{email}</strong>.
+      edit_profile: Edit profile
+      sign_out: Logout
+    new: New
+    edit: Edit
+    import: Import
+    error:
+      one: 'Error: Prohibited from being saved'
+      other: 'Errors: Prohibited from being saved'

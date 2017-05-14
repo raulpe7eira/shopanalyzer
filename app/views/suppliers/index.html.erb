@@ -1,0 +1,37 @@
+<div class="panel panel-default list">
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-condensed">
+      <thead>
+        <tr>
+          <th class="sorters">#</th>
+          <th><%= Supplier.human_attribute_name('name') %></th>
+          <th class="actions">
+            <%= link_to t('buttons.new'), new_supplier_path, class: 'btn btn-xs btn-primary', width: '100%' %>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @suppliers.each_with_index do |supplier, index| %>
+        <tr>
+          <th class="sorters text-info"><%= row_number(index, @suppliers.limit_value) %></th>
+          <td><%= supplier.name %></td>
+          <td class="actions">
+            <div class="btn-group btn-group-xs">
+              <%= link_to edit_supplier_path(supplier), class: 'btn btn-default' do %>
+                <span class="glyphicon glyphicon-edit text-info" aria-hidden="true"></span>
+              <% end %>
+              <%= link_to supplier, method: :delete, data: { confirm: t('messages.confirm') }, class: 'btn btn-default' do %>
+                <span class="glyphicon glyphicon-trash text-danger" aria-hidden="true"></span>
+              <% end %>
+            </div>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="panel-footer clearfix">
+    <p class="pagination-info"><%= page_entries_info @suppliers %></p>
+    <%= paginate @suppliers, window: 1 %>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="panel-body">
+  <%= form_for(shopper) do |f| %>
+    <% if shopper.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <h2><%= "#{pluralize(shopper.errors.count, t('labels.error', count: shopper.errors.count))}" %></h2>
+      <ul>
+        <% shopper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+
+    <div class="form-group form-group-sm">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <div class="panel-footer">
+      <%= f.submit t('buttons.save'), class: 'btn btn-sm btn-primary' %>
+      <%= link_to t('buttons.cancel'), shoppers_path, class: 'btn btn-sm btn-default' %>
+    </div>
+  <% end %>
+</div>

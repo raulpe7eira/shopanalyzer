@@ -1,0 +1,11 @@
+en:
+  messages:
+    confirm: Are you sure you want to destroy?
+    created: Was successfully created
+    updated: Was successfully updated
+    destroyed: Was successfully destroyed
+    uploaded: Was successfully uploaded
+    error:
+      dependents: Can't destroy as long as there are dependents entries
+      notfound: Entry not found
+      typefile: Invalid type file
