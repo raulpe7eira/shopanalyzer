@@ -86,7 +86,7 @@ Acesse => *[https://shopanalyzer-rp.herokuapp.com/](https://shopanalyzer-rp.hero
 
 ##### Segurança
 
-**[Devise](https://github.com/plataformatec/devise)**: Foi utilizado esta biblioteca de módulos para solucionar questões de segurança aos serviços que a aplicação possui. Hoje a aplicação permite o cadastro de novos usuários e apenas o usuário autenticado pode acessar os seus registros cadastrados por ele na aplicação.
+**[Devise](https://github.com/plataformatec/devise)**: Foi utilizado esta biblioteca de módulos para solucionar questões de segurança aos serviços que a aplicação possui. Hoje a aplicação permite o cadastro de novos usuários e apenas o usuário autenticado pode acessar os seus registros cadastrados.
 
 #### Frontend
 
@@ -102,6 +102,8 @@ Acesse => *[https://shopanalyzer-rp.herokuapp.com/](https://shopanalyzer-rp.hero
 
 ## Conclusão
 
-Mais um desafio usando [Rails](http://rubyonrails.org/), fiquei feliz com o resultado final, a solução esta bem funcional, porém, precisava de um pouco mais de tempo para averiguar toda parte de segurança relativa a manipulação do arquivo enviado tirando isso, faltou efetuar os testes do frontend, enfim, entrou no backlog de melhorias para próxima versão.
+Mais um desafio usando [Rails](http://rubyonrails.org/), fiquei feliz com o resultado final, a solução esta bem funcional, porém, precisava de um pouco mais de tempo para averiguar toda parte de segurança relacionada com a manipulação do arquivo enviado, tirando isso, também faltou efetuar os testes do frontend e, a falta mais grave, ter feito a solução na versão informada, acabei fazendo na versão que estou usando no meu micro pessoal e não havia me ligado que estava usando uma versão superior.
+
+Enfim, entrou no backlog de melhorias para próxima versão, averiguar se a solução tem algum problema para rodar na versão solicitada, além dos itens citados anteriormente.
 
 **AVANTE!** :muscle:
