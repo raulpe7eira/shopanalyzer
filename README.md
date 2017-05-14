@@ -11,10 +11,10 @@ Um pequeno projeto para testar minhas habilidades.
 > Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize os dados e armazene-os. A aplicação deve:
 >
 > - [X] Aceitar o upload de **arquivos text** via formulário, com dados separados por TAB, testar o aplicativo usando o arquivo fornecido (**[data.txt](../master/spec/fixtures/files/data.txt)**). A primeira linha do arquivo tem o nome das colunas. Você pode assumir que as colunas estarão sempre nesta ordem, e que sempre haverá uma linha de cabeçalho.
-> - [X] Interpretar (**parsear**) o arquivo recebido, normalizar os dados e salvar corretamente a informação em um **banco de dados relacional**.
+> - [X] Interpretar o arquivo recebido, normalizar os dados e salvar corretamente a informação em um **banco de dados relacional**.
 > - [ ] Exibir todos os registros importados, bem como a **receita bruta total** dos registros contidos no arquivo enviado após o upload + parser. `Faltou exibir a receita bruta total` :disappointed_relieved:
 > - [ ] Ser escrita obrigatoriamente em **Ruby 2.1+ Rails 4 e SQLite** `Feito c/ Rails 5.0.2` :disappointed_relieved:
-> - [X] Ser **simples de configurar e rodar** a partir das instruções fornecidas, funcionando em ambiente compatível com Unix (Linux ou Mac OS X) para Ruby On Rails e Windows para .Net. Ela deve utilizar apenas linguagens e bibliotecas livres ou gratuitas.
+> - [X] Ser **simples de configurar e rodar** a partir das instruções fornecidas, funcionando em ambiente compatível com **Unix (Linux ou Mac OS X)** para Ruby On Rails e Windows para .Net. Ela deve utilizar apenas linguagens e bibliotecas **livres ou gratuitas**.
 > - [X] Ter **um** teste de model e controller automatizado para a funcionalidade pedida.
 > - [X] Ter uma **boa aparência** e ser **fácil de usar**.
 >
