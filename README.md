@@ -8,7 +8,7 @@ Um pequeno projeto para testar minhas habilidades.
 
 > ...
 >
-> Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize os dados e armazene-os, e a aplicação deve:
+> Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize os dados e armazene-os. Devendo:
 >
 > - [X] Aceitar, via formulário, o upload de **arquivos text**, com dados separados por TAB testar o aplicativo usando o arquivo fornecido. A primeira linha do arquivo tem o nome das colunas. Você pode assumir que as colunas estarão sempre nesta ordem, e que sempre haverá uma linha de cabeçalho (**Um arquivo de exemplo chamado [data.txt](../master/spec/fixtures/files/data.txt) está incluído neste repositório**).
 > - [X] Interpretar (**parsear**) o arquivo recebido, normalizar os dados e salvar corretamente a informação em um **banco de dados relacional**.
