@@ -1,8 +1,9 @@
 <div class="panel panel-default">
-  <h2 class="sb-title"><%= "#{t('labels.import')} #{Sale.model_name.human}" %></h2>
+  <h2 class="sb-title"><%= "#{t('labels.import')} #{Sale.model_name.human(count: 2)}" %></h2>
   <div class="panel-body">
     <%= form_tag upload_sales_path, multipart: true do %>
       <div class="form-group form-group-sm">
+        <%= label_tag t('labels.file') %>
         <%= file_field_tag :file, accept: 'text/plain', class: 'form-control' %>
       </div>
  

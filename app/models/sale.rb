@@ -17,6 +17,7 @@ class Sale < ApplicationRecord
   monetize :price_cents
 
   scope :ordered, -> (current_user) { includes(:shopper).where(user: current_user).order('shoppers.name') }
+  scope :summed, -> (current_user) { Money.new(self.where(user: current_user).sum(:price_cents)) }
 
   paginates_per 10
 

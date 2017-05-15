@@ -8,6 +8,7 @@ class SalesController < ApplicationController
   # GET /sales.json
   def index
     @sales = Sale.ordered(current_user).page(params[:page])
+    @total = Sale.summed(current_user)
   end
 
   # GET /sales/new

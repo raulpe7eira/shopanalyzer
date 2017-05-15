@@ -27,7 +27,7 @@
           <%= f.label :price %>
           <div class="input-group">
             <div class="input-group-addon"><%= sale.price.currency.symbol %></div>
-            <%= f.text_field :price, class: 'form-control' %>
+            <%= f.number_field :price, step: 0.01, class: 'form-control' %>
           </div>
         </div>
       </div>

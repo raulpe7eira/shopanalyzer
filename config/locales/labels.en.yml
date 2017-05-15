@@ -7,6 +7,8 @@ en:
     new: New
     edit: Edit
     import: Import
+    file: Text file
+    total: TOTAL SALES
     error:
       one: 'Error: Prohibited from being saved'
       other: 'Errors: Prohibited from being saved'
