@@ -12,7 +12,7 @@ Um pequeno projeto para testar minhas habilidades.
 >
 > - [X] Aceitar o upload de **arquivos text** via formulário, com dados separados por TAB, testar o aplicativo usando o arquivo fornecido (**[data.txt](../master/spec/fixtures/files/data.txt)**). A primeira linha do arquivo tem o nome das colunas. Você pode assumir que as colunas estarão sempre nesta ordem, e que sempre haverá uma linha de cabeçalho.
 > - [X] Interpretar o arquivo recebido, normalizar os dados e salvar corretamente a informação em um **banco de dados relacional**.
-> - [ ] Exibir todos os registros importados, bem como a **receita bruta total** dos registros contidos no arquivo enviado após o upload + parser. `Faltou exibir a receita bruta total` :disappointed_relieved:
+> - [X] Exibir todos os registros importados, bem como a **receita bruta total** dos registros contidos no arquivo enviado após o upload + parser.
 > - [ ] Ser escrita obrigatoriamente em **Ruby 2.1+ Rails 4 e SQLite** `Feito c/ Rails 5.0.2` :disappointed_relieved:
 > - [X] Ser **simples de configurar e rodar** a partir das instruções fornecidas, funcionando em ambiente compatível com **Unix (Linux ou Mac OS X)** para Ruby On Rails e Windows para .Net. Ela deve utilizar apenas linguagens e bibliotecas **livres ou gratuitas**.
 > - [X] Ter **um** teste de model e controller automatizado para a funcionalidade pedida.
@@ -94,7 +94,7 @@ Acesse => *[https://shopanalyzer-rp.herokuapp.com/](https://shopanalyzer-rp.hero
 
 #### Testes
 
-**[RSpec](http://rspec.info/)**: Toda a estrutura do modelo e controle foi coberta - backend, ficou pendente realizar os testes para os helpers e os cenários das features - frontend. A finalização de todos os testes é mais do que necessário para orquestrar todo processo de implantação em ambiente de produção com mais segurança.
+**[RSpec](http://rspec.info/)**: Quase toda a estrutura do modelo e controle foi coberta - backend, ficou pendente também realizar os testes para os helpers e os cenários das features - frontend. A finalização de todos os testes é mais do que necessário para orquestrar todo processo de implantação em ambiente de produção com mais segurança.
 
 #### Servidores de produção
 
@@ -102,7 +102,7 @@ Acesse => *[https://shopanalyzer-rp.herokuapp.com/](https://shopanalyzer-rp.hero
 
 ## Conclusão
 
-Mais um desafio usando [Rails](http://rubyonrails.org/), fiquei feliz com o resultado final, a solução esta bem funcional, porém, precisava de um pouco mais de tempo para averiguar toda parte de segurança relacionada com a manipulação do arquivo enviado, tirando isso, também faltou efetuar os testes do frontend e, a falta mais grave, ter feito a solução na versão informada, acabei fazendo na versão que estou usando no meu micro pessoal e não havia me ligado que estava usando uma versão superior.
+Mais um desafio usando [Rails](http://rubyonrails.org/), fiquei feliz com o resultado final, a solução esta bem funcional, porém, precisava de um pouco mais de tempo para averiguar toda parte de segurança relacionada com a manipulação do arquivo enviado, tirando isso, também faltou efetuar alguns testes, principalmente os do frontend e, a falta mais grave, ter feito a solução na versão informada, acabei fazendo na versão que estou usando no meu micro pessoal e não havia me ligado que estava usando uma versão superior.
 
 Enfim, entrou no backlog de melhorias para próxima versão, averiguar se a solução tem algum problema para rodar na versão solicitada, além dos itens citados anteriormente.
 
