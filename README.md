@@ -102,7 +102,7 @@ Acesse => *[https://shopanalyzer-rp.herokuapp.com/](https://shopanalyzer-rp.hero
 
 ## Conclusão
 
-Mais um desafio usando [Rails](http://rubyonrails.org/), fiquei feliz com o resultado final, a solução esta bem funcional, porém, precisava de um pouco mais de tempo para averiguar toda parte de segurança relacionada com a manipulação do arquivo enviado, tirando isso, também faltou efetuar alguns testes, principalmente os do frontend e, a falta mais grave, ter feito a solução na versão informada, acabei fazendo na versão que estou usando no meu micro pessoal e não havia me ligado que estava usando uma versão superior.
+Mais um desafio usando [Rails](http://rubyonrails.org/), fiquei feliz com o resultado final, a solução esta bem funcional, porém, precisava de um pouco mais de tempo para averiguar toda parte de segurança relacionada com a manipulação do arquivo enviado, tirando isso, também faltou efetuar alguns testes, principalmente os do frontend e, a falta mais grave, **não** ter feito a solução na versão informada, acabei fazendo na versão instalada no micro pessoal e não percebi que estava usando uma versão diferente até escrever a primeira versão desta documentação.
 
 Enfim, entrou no backlog de melhorias para próxima versão, averiguar se a solução tem algum problema para rodar na versão solicitada, além dos itens citados anteriormente.
 
