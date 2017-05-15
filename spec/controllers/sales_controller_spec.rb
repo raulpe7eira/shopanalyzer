@@ -21,6 +21,10 @@ RSpec.describe SalesController, :type => :controller do
     it 'loads all sales into the @sales' do
       expect(assigns(:sales)).to match_array(sales)
     end
+
+    it 'loads total sales into the @total' do
+      # TODO: @total not implement yet
+    end
   end
 
   describe 'GET #new' do

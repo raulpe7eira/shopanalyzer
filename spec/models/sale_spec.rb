@@ -41,16 +41,20 @@ RSpec.describe Sale, :type => :model do
     let(:account) { create :user }
 
     context 'ordered by shopper name' do
-      let(:product)     { create :valid_product, user: account }
-      let(:supplier)    { create :valid_supplier, user: account }
-
       let(:shopper_one) { create :valid_shopper, name: 'Fulano', user: account }
       let(:shopper_two) { create :valid_shopper, name: 'Beltrano', user: account }
+
+      let(:product)     { create :valid_product, user: account }
+      let(:supplier)    { create :valid_supplier, user: account }
 
       let(:sale_one)    { create :valid_sale, shopper: shopper_one, product: product, supplier: supplier, user: account }
       let(:sale_two)    { create :valid_sale, shopper: shopper_two, product: product, supplier: supplier, user: account }
 
       it { expect(described_class.ordered(account)).to match_array([sale_two, sale_one]) }
+    end
+
+    context 'summed total prices' do
+      # TODO: not implemented yet
     end
   end
 
